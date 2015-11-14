@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="_css/styles.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<div id="container" class="cf">
+			<header>
+				<img class="mylogo" src="_imgs/my logo.png" height="300" width="300">
+				<h1>Artist Chris Diaz</h1>
+			</header>
+				<nav id="mainmenu">
+					<a href="index.html">Home</a>
+					<a href="photoshop.html">Digital</a>
+					<a href="illustrator.html">Vector Art</a>
+					<a href="art.html">Fine Art</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			<div class="about">
+				<h1>About</h1>
+				<p>Artist And Graphic Designer
+				 Neque porro quisquam est, qui dolorem 
+				 ipsum quia dolor sit amet, consectetur, 
+				 adipisci elit, sed quia non numquam eius 
+				 modi tempora cidunt ut labore et dolore 
+				 magnam aliquam quaerat nihil molestiae</p>
+				 <p>Artist And Graphic Designer
+				 Neque porro quisquam est, qui dolorem 
+				 ipsum quia dolor sit amet, consectetur, 
+				 adipisci elit, sed quia non numquam eius 
+				 modi tempora cidunt ut labore et dolore 
+				 magnam aliquam quaerat nihil molestiae</p>
+				 <p>Artist And Graphic Designer
+				 Neque porro quisquam est, qui dolorem 
+				 ipsum quia dolor sit amet, consectetur, 
+				 adipisci elit, sed quia non numquam eius 
+				 modi tempora cidunt ut labore et dolore 
+				 magnam aliquam quaerat nihil molestiae</p>
+				
+			</div>
+
+            <section id="section1"></section>
+			<section id="section2"></section>
+			<section id="section3"></section>
+
+			<script type="text/javascript" src="_js/jquery-1.11.3.min.js"></script>
+			<script>
+			/*-------------------------------------
+				| menu nav funcation
+				-------------------------------------*/
+				$(function() {
+					var pull		= $('#pull');
+						menu		= $('nav ul');
+						menuheight	= menu.height();
+
+					$(pull).on('click', function(e) {
+						e.preventDefault();
+						menu.slideToggle();
+					});
+				});
+
+				$(window).resize(function() {
+					var w = $(window).width();
+					if(w > 320 && menu.is(':hidden')) {
+						menu.removeAttr('style');
+					}
+
+				});
+				
+			</script>
+			<footer id="closing">
+				&copy; 2015. All rights reserved Chris Diaz
+			</footer>
+		</div>
+
+	</body>
+</html>
