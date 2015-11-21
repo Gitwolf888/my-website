@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<title>Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="_css/styles.css">
-
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 	<body>
 		<div id="container" class="cf">
 			<header>
-				<img class="mylogo" src="_imgs/my logo.png" height="300" width="300">
+				<img class="mylogo" src="imgs/my logo.png" height="300" width="300">
 				<h1>Artist Chris Diaz</h1>
 			</header>
 				<nav id="mainmenu">
@@ -22,41 +22,35 @@
 					</ul>
 					<a href="#" id="pull">Menu</a>
 				</nav>
-				<h1>Contact</h1>
-			<div id="form">
-				<form class="form">
-					<p class="name">
-						<input type="text" name="name" id="name" placeholder="John Doe" />
-						<label for="name">Name</label>
-					</p>
-					
-					<p class="email">
-						<input type="text" name="email" id="email" placeholder="mail@example.com" />
-						<label for="email">Email</label>
-					</p>
-					
-					<p class="web">
-						<input type="text" name="web" id="web" placeholder="www.example.com" />
-						<label for="web">Website</label>
-					</p>		
-				
-					<p class="text">
-						<textarea name="text" placeholder="Write something to us" /></textarea>
-					</p>
-					
-					<p class="submit">
-						<input type="submit" value="Send" />
-					</p>
-				</form>
+			<div class="about">
+				<h1>Vector Art</h1>
+				<div>
+					<ul class="rslides">
+					<li><img class="photo" src="imgs/illustrator/lego.jpg" width="600" height="776"></li>
+					<li><img class="photo" src="imgs/illustrator/100monkey.jpg" width="1700" height="2200"></li>
+					<li><img class="photo" src="imgs/illustrator/go granny.jpg" width="600" height="776"></li>
+					<li><img class="photo" src="imgs/illustrator/kabuki.jpg" width="449" height="600"></li>
+					<li><img class="photo" src="imgs/illustrator/lilmama.jpg" width="600" height="450"></li>
+					<li><img class="photo" src="imgs/illustrator/moustach.jpg" width="600" height="400"></li>
+					<li><img class="photo" src="imgs/illustrator/kids.jpg" width="364" height="600"></li>
+					<li><img class="photo" src="imgs/illustrator/sicksense logo.jpg" width="600" height="400"></li>
+
+				</ul>
+				</div>
 			</div>
 
 			<section id="section1"></section>
 			<section id="section2"></section>
 			<section id="section3"></section>
-			
-			<script type="text/javascript" src="_js/jquery-1.11.3.min.js"></script>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script src="js/responsiveslides.min.js"></script>
 			<script>
-				/*-------------------------------------
+			  $(function() {
+			    $(".rslides").responsiveSlides();
+			  });
+
+			   /*-------------------------------------
 				| menu nav funcation
 				-------------------------------------*/
 				$(function() {
@@ -77,11 +71,13 @@
 					}
 
 				});
+
 			</script>
 			<footer id="closing">
 				&copy; 2015. All rights reserved Chris Diaz
 			</footer>
-		</div>
 
+		</div>
+		
 	</body>
 </html>
