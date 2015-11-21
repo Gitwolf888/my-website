@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<div id="container" class="cf">
+			<header>
+				<img class="mylogo" src="imgs/my logo.png" height="300" width="300">
+				<h1>Artist Chris Diaz</h1>
+			</header>
+				<nav id="mainmenu">
+					<ul id="mainmenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="photoshop.html">Digital</a></li>
+						<li><a href="illustrator.html">Vector Art</a></li>
+						<li><a href="art.html">Fine Art</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<a href="#" id="pull">Menu</a>
+				</nav>
+			<div class="about">
+				<h1>Digital</h1>
+				<div>
+					<ul class="rslides">
+						<li><img class="photo" src="imgs/photoshop/beach.jpg" height="600" width="460"></li>
+						<li><img class="photo" src="imgs/photoshop/wolf-lamb.jpg" height="600" width="480"></li>
+						<li><img class="photo" src="imgs/photoshop/octolayout.jpg" height="600" width="464"></li>
+						<li><img class="photo" src="imgs/photoshop/hemp.jpg" height="471" width="600"></li>
+						<li><img class="photo" src="imgs/photoshop/gogrannyburger.jpg" height="600" width="464"></li>
+						<li><img class="photo" src="imgs/photoshop/rockgods.jpg" height="600" width="300"></li>
+						<li><img class="photo" src="imgs/photoshop/selfportrait.jpg" height="400" width="518"></li>
+						<li><img class="photo" src="imgs/photoshop/hemp.jpg" height="600" width="464"></li>
+					</ul>
+				</div>
+			</div>
+
+			<section id="section1"></section>
+			<section id="section2"></section>
+			<section id="section3"></section>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+			  $(function() {
+			    $(".rslides").responsiveSlides();
+			  });
+
+			   /*-------------------------------------
+				| menu nav funcation
+				-------------------------------------*/
+				$(function() {
+					var pull		= $('#pull');
+						menu		= $('nav ul');
+						menuheight	= menu.height();
+
+					$(pull).on('click', function(e) {
+						e.preventDefault();
+						menu.slideToggle();
+					});
+				});
+
+				$(window).resize(function() {
+					var w = $(window).width();
+					if(w > 320 && menu.is(':hidden')) {
+						menu.removeAttr('style');
+					}
+
+				});
+
+			</script>
+			<footer id="closing">
+				&copy; 2015. All rights reserved Chris Diaz
+			</footer>
+
+		</div>
+		
+	</body>
+</html>
