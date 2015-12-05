@@ -244,7 +244,19 @@ nav a#pull {
 	}
 }
 
+/*-------------------------------------
+| bootstrap
+-------------------------------------*/
+.row > div {
+	min-width: 135px;
+	padding: 20px;
+	width: 75%;
+}
 
+p {
+	color: purple;
+	font-family: Helvetica;
+}
 
 /*-------------------------------------
 | CF

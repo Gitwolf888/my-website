@@ -47,34 +47,17 @@
 			<section id="section2"></section>
 			<section id="section3"></section>
 
-			<script type="text/javascript" src="js/javascript.js"></script>
+
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script src="js/jquery-1.11.3.min.js"></script>
 			<script src="js/responsiveslides.min.js"></script>
+			<script src="js/javascript.js"></script>
 			<script>
-			  $(function() {
-			    $(".rslides").responsiveSlides();
-			  });
-
-			    /*-------------------------------------
-				| menu nav funcation
+				/*-------------------------------------
+				| slideshow
 				-------------------------------------*/
-				$(function() {
-					var pull		= $('#pull');
-						menu		= $('nav ul');
-						menuheight	= menu.height();
-
-					$(pull).on('click', function(e) {
-						e.preventDefault();
-						menu.slideToggle();
-					});
-				});
-
-				$(window).resize(function() {
-					var w = $(window).width();
-					if(w > 320 && menu.is(':hidden')) {
-						menu.removeAttr('style');
-					}
-
+					$(function() {
+						$(".rslides").responsiveSlides();
 				});
 			</script>
 

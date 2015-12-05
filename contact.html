@@ -55,29 +55,7 @@
 			<section id="section3"></section>
 			
 			<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-			<script>
-				/*-------------------------------------
-				| menu nav funcation
-				-------------------------------------*/
-				$(function() {
-					var pull		= $('#pull');
-						menu		= $('nav ul');
-						menuheight	= menu.height();
-
-					$(pull).on('click', function(e) {
-						e.preventDefault();
-						menu.slideToggle();
-					});
-				});
-
-				$(window).resize(function() {
-					var w = $(window).width();
-					if(w > 320 && menu.is(':hidden')) {
-						menu.removeAttr('style');
-					}
-
-				});
-			</script>
+			<script src="js/javascript.js"></script>
 			<footer id="closing">
 				&copy; 2015. All rights reserved Chris Diaz
 			</footer>
