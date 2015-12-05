@@ -4,7 +4,7 @@
 body {
 	margin: 0px;
 	font-family: Tahoma;
-	background-image: url(../_imgs/background-pic.jpg);
+	background-image: url(../imgs/background-pic.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
@@ -59,7 +59,7 @@ section {
 	/*border-Bottom: solid 10px red;*/
 	height: 600px;
 	/*margin-bottom: 25px;*/
-	background-color: white;
+	background-color: White;
 
 	background-size: cover;
 	background-position: center center;
@@ -68,15 +68,15 @@ section {
 	padding: 10px;
 }
 
-section:nth-of-type(3n+1) { background-image: url(../_imgs/background1.png); }
-section:nth-of-type(3n+2) { background-image: url(../_imgs/background2.png); }
-section:nth-of-type(3n+3) { background-image: url(../_imgs/background3.png); }
+section:nth-of-type(3n+1) { background-image: url(../imgs/background1.png); }
+section:nth-of-type(3n+2) { background-image: url(../imgs/background2.png); }
+section:nth-of-type(3n+3) { background-image: url(../imgs/background3.png); }
 
 footer {
 	padding: 10px;
 	width: auto;
 	height: auto;
-	background-color: #25647D
+	background-color: #6a257d
 }
 
 /*-------------------------------------
@@ -120,11 +120,11 @@ footer {
 nav {
     height: 40px;
     width: 100%;
-    background: #D599BD;
+    background: #af7ea8;
     font-size: 11pt;
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     position: relative;
-    border-bottom: 2px solid #283744;
+    border-bottom: 2px solid #6a257d;
 }
 nav ul {
     padding: 0;
@@ -197,8 +197,8 @@ nav a#pull {
 		position: relative;
 	}
 	nav li a {
-		border-bottom: solid 1px #576979;
-		border-right: solid 1px #576979;
+		border-bottom: solid 1px  #6a257d;
+		border-right: solid 1px  #6a257d;
 	}
 	nav a {
 		text-align: left;
@@ -217,7 +217,7 @@ nav a#pull {
 	}
 	nav a#pull {
 		display: block;
-		background-color: #F574DF;
+		background-color: #8d408a;
 		width: 100%;
 		position: relative;
 	}
@@ -240,7 +240,7 @@ nav a#pull {
 		width: 100%;
 	}
 	nav li a {
-		border-bottom: solid 1px #576979;
+		border-bottom: solid 1px #8d408a;
 	}
 }
 
@@ -258,7 +258,7 @@ nav a#pull {
 -------------------------------------*/
 img { max-width: 100%; height: auto; }
 
-body { color: #102632; }
+body { color: Black; }
 #masthead { position: relative; }
 #masthead h1 {
 	font-size: 0px;
