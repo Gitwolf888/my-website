@@ -59,7 +59,7 @@ section {
 	/*border-Bottom: solid 10px red;*/
 	height: 600px;
 	/*margin-bottom: 25px;*/
-	background-color: White;
+	background-color: white;
 
 	background-size: cover;
 	background-position: center center;
@@ -270,7 +270,7 @@ p {
 -------------------------------------*/
 img { max-width: 100%; height: auto; }
 
-body { color: Black; }
+body { color: #000000; }
 #masthead { position: relative; }
 #masthead h1 {
 	font-size: 0px;
