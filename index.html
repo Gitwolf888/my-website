@@ -5,18 +5,11 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script src="cordova.js"></script>
 	</head>
 	<body>
 		<div id="container" class="cf">
-
-				  
-<div class="centered">
-<p>Share this!</p>
-<button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">SHARE ON FB!</button>
-</div>
-<hr/>
-
-			<header>
+             <header>
 				<img class="mylogo" src="imgs/my logo.png" height="300" width="300">
 				<h1>Artist Chris Diaz</h1>
 			</header>
@@ -73,6 +66,14 @@
             <section id="section1"></section>
 			<section id="section2"></section>
 			<section id="section3"></section>
+
+
+			<div class="centered">
+		    <img id="fbshare" src="imgs/web_fb_logo.jpg" height="100" "width=100" alt="logo" />
+			<p>L Chris Diaz</p>
+			<button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">Check me out on FB</button>
+			</div>
+		
 
 			<script src="js/jquery-1.11.3.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
