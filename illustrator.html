@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<div id="container" class="cf">
+			<header>
+				<img class="mylogo" src="imgs/my logo.png" height="300" width="300">
+				<h1>Artist Chris Diaz</h1>
+			</header>
+				<nav id="mainmenu">
+					<ul id="mainmenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="photoshop.html">Digital</a></li>
+						<li><a href="illustrator.html">Vector Art</a></li>
+						<li><a href="art.html">Fine Art</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<a href="#" id="pull">Menu</a>
+				</nav>
+			<div class="about">
+				<h1>Digital</h1>
+				<div>
+					<ul class="rslides">
+						<li><img class="photo" src="imgs/illustrator/kabuki.jpg"></li>
+						<li><img class="photo" src="imgs/illustrator/octo.jpg"></li>
+						<li><img class="photo" src="imgs/illustrator/sicksense logo.jpg"></li>
+						
+					</ul>
+				</div>
+			</div>
+
+			<section id="section1"></section>
+			<section id="section2"></section>
+			<section id="section3"></section>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script src="js/jquery-1.11.3.min.js"></script>
+			<script src="js/responsiveslides.min.js"></script>
+			<script src="js/javascript.js"></script>
+			<script>
+				/*-------------------------------------
+				| slideshow
+				-------------------------------------*/
+					$(function() {
+						$(".rslides").responsiveSlides();
+				});
+			</script>
+
+			<footer id="closing">
+				&copy; 2015. All rights reserved Chris Diaz
+			</footer>
+
+		</div>
+		
+	</body>
+</html>
