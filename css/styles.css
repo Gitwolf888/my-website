@@ -24,7 +24,7 @@ body { font-family: cursive; background-color: #333; color: #eee;}
 	padding-bottom: 20px;
 }
 
-header 	{ background-image: url(../_imgs/lead-21.jpg);}
+header 	{ background-image: url(../imgs/lead-21.jpg);}
 nav 	{ background-color: #614800; padding: 10px; }
 #main 	{ background-color: #550; padding: 10px; }
 footer 	{ background-color: #614800; padding: 10px; }
