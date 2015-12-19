@@ -1,0 +1,165 @@
+
+body { font-family: cursive; background-color: #333; color: #eee;}
+
+#container {
+	background-color: #eee; 
+}
+.inset {
+	outline: solid 2px #8A6D3B;
+	width: 90%;
+	min-width: 320px; 
+	max-width: 1200px;
+	/*padding: 10px; */
+	margin: auto;
+	color: #EEEEEE;
+
+}
+
+.mylogo {
+	display: block;
+	margin-left: 0;
+	margin-right: auto;
+	width: 100px;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+header 	{ background-image: url(../_imgs/lead-21.jpg);}
+nav 	{ background-color: #614800; padding: 10px; }
+#main 	{ background-color: #550; padding: 10px; }
+footer 	{ background-color: #614800; padding: 10px; }
+
+/*-------------------------------------
+| header and footer
+-------------------------------------*/
+header .inset {
+	line-height: 200px;
+	font-size: 50px;
+	text-align: center;
+}
+footer .inset {
+	line-height: 100px;
+	font-size: 30px;
+	text-align: center;
+}
+/*-------------------------------------
+| nav
+-------------------------------------*/
+nav#mainmenu { text-align: center; }
+nav#mainmenu a {
+	display: inline-block;
+	width: 75px; 
+	line-height: 50px; 
+	border-radius: 5px;
+	background-color: #5E070E;
+	color: #fff;
+}
+nav#mainmenu a:hover { background-color: #1E0204; color: #fff; text-decoration: none; }
+nav#mainmenu a.chosen { background-color: #E9BF36;  color: #000; }
+
+/*-------------------------------------
+| hamburger
+-------------------------------------*/
+nav#mainmenu .glyphicon-menu-hamburger { 
+	color: #E49191;
+	font-size: 40px;
+	padding: 5px;
+}
+nav#mainmenu .menu  { display: none; }
+
+@media screen and (min-width:800px) {
+	nav#mainmenu .glyphicon-menu-hamburger {  display: none; }
+	nav#mainmenu .menu  { display: block; }
+}
+
+/*-------------------------------------
+| Pinned Navigation
+-------------------------------------*/
+.pinned nav#mainmenu {
+	position: fixed;
+	left: 0px; 
+	right: 0px; 
+	top: 0px; 
+
+	z-index: 9000;
+}
+/*hold the space for the nav once its positioned. */
+.pinned header { margin-bottom: 70px; }
+
+/*-------------------------------------
+| Main
+-------------------------------------*/
+#main section {
+	min-height: 800px;
+	overflow: hidden;
+	background-color: #5E070E;
+}
+#main section:nth-of-type(even) { background-color: #55939D; }
+
+/*-------------------------------------
+| 12 Column Grid
+-------------------------------------*/
+.row > div {
+	border: solid 3px #969293;
+	background-color: #A26D29;
+	min-height: 300px;
+	padding-top: 10px;
+}
+
+
+/*-------------------------------------
+| Responsive Images
+-------------------------------------*/
+img { width: 100%; }
+
+
+
+/*-----------------------------------
+Embeded Responsive
+--------------------------------*/
+#sect2 .embed-responsive-item {
+	font-size: 50px;
+	color: #5E070E;
+	transition: .5s all;
+}
+
+#sect2 .embed-responsive-item:hover {
+	font-size:  60px;
+	color: #602918;
+}
+
+/*------------------------------------
+| Tables
+----------------------------------*/
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #4e939c;
+}
+
+table { color:#1e5158;}	
+
+.table-bordered {
+	border: 1px solid #25646D;
+
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th
+{
+	border: 1px solid #25646D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
